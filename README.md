@@ -2,7 +2,7 @@
 
 ## by Daniel Booher
 
-This is a `Java` program that generates a target word/phrase using Genetic Algorithms
+This is a `Java` program, run in the terminal, that generates a target word/phrase using Genetic Algorithms
 
 # Terms
 
