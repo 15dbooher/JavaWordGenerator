@@ -1,41 +1,46 @@
-# Java FTP Server And Client
+# Java Word Generator using Genetic Algorithms
 
 ## by Daniel Booher
 
-This is a simple FTP client and server written in `Java` for a school project that I though I should share
+This is a `Java` program that generates a target word/phrase using Genetic Algorithms
 
-# Server Usage: 
+# Usage: 
 
-`java Server <port>`
+`java wordGenerator.WordGenerator`
 
-> `port` can be any open valid port or 0 for the first open available port
->
-> The server remains running until it is manually killed with ^C (Ctrl+C)
->
-> If 0 is used for the port number, then after closing connections with a client a new port is used (the old port is still closed)
->
-> This program pulls files from a directory named `AvailableFiles` within the same directory that this class file is in (`FTP/Server/AvailableFiles` by default)
+It will ask you to input some values:
 
-# Server Example:
+`Population size`
+> is the number of words to be mutated in a `Population`
+> `Population size` is an `int`
 
-Input: `java Server 5000`
+`Mutation Percentage`
+> The percentage each letter in a given word has to `mutate` (randomly change to another letter)
+> `Mutation Percentage` is entered as an `int` which is interpreted as a percentage
+> ex: `Mutation Percentage` = 10 -> 10% chance for a letter to mutate
 
-# Client Usage: 
+`Target`
+> The word/phrase that this program will try to generate
+> is a `String` and can include A-Z, a-z, 0-9, spaces, and symbols
 
-`java Client <IP Address> <port>`
+# Example:
 
-`java Client <Host> <port>`
+Input: `java wordGenerator.WordGenerator`
 
-> `IP Address` must be a valid IPv4 Address
->
-> `Host` must be a valid evaluatable Hostname
->
-> `port` can be any open valid port
->
-> The Client downloads files and saves them into a directory named `DownloadedFiles` that is within the same directory that this class file is in (`FTP/Client/DownloadedFiles` by default)
+Output: `Please enter population size`
 
-# Client Example:
+Input: `100`
 
-Input: `java Client 127.0.0.1 5000`
+Output: `Please enter the percentage for the mutation to occour`
 
-Input: `java Client localhost 1414`
+Input: `1`
+
+Output: `Please enter target word or phrase`
+
+Input: `Hello World`
+
+Output: `Generation: 559`
+        `Top Word: Hello World`
+        `Fitness: 11`
+        `Average Fitness: 9.880000`
+        `Elapsed time: 0.8557480000000001 second(s)`
