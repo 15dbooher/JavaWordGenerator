@@ -4,6 +4,12 @@
 
 This is a `Java` program, run in the terminal, that generates a target word/phrase using Genetic Algorithms
 
+This program uses `ANSI Escape Sequences` meaning that **Windows Command Prompt (cmd) CANNOT OUTPUT CORRECTLY!** 
+
+If you are using Windows, there are a number of terminal emulators available that do support `ANSI Escape Sequences`, the easiest of which to get is:
+
+[Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab)
+
 # Terms
 
 These are some terms that are necessary to understand in order to use this program:
