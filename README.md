@@ -63,6 +63,10 @@ These are some terms that are necessary to understand in order to use this progr
 
 `java wordGenerator.WordGenerator`
 
+If this command does not work, you probably need to define the classpath for the JVM to use. 
+
+While in `.../JavaWordGenerator/` use this command: `java -cp . wordGenerator.WordGenerator` or `java --classpath . wordGenerator.WordGenerator`
+
 It will ask you to input some values:
 
 `Population size`
