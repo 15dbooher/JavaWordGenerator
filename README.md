@@ -65,7 +65,7 @@ These are some terms that are necessary to understand in order to use this progr
 
 If this command does not work, you probably need to define the classpath for the JVM to use. 
 
-While in `.../JavaWordGenerator/` use the command: 
+While in the `JavaWordGenerator/` folder use the command: 
 
 `java -cp . wordGenerator.WordGenerator` or `java --classpath . wordGenerator.WordGenerator`
 
